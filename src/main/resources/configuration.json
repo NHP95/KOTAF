@@ -1,5 +1,5 @@
 {
-  "applicationUrl": "http://localhost",
+  "applicationUrl": "http://192.168.74.25/patest",
   "driver": "chrome",
   "elementTimeout": 10,
   "remoteURL": "",
