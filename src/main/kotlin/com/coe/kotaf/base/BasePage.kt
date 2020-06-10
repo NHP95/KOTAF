@@ -2,7 +2,7 @@ package com.coe.kotaf.base
 
 import com.coe.kotaf.configuration
 import com.coe.kotaf.driver.driver
-import com.coe.kotaf.elements.support.ComponentFieldDecorator
+import com.coe.kotaf.elements.support.ExtendedFieldDecorator
 import org.openqa.selenium.support.PageFactory
 
 @Suppress("LeakingThis")
@@ -11,7 +11,7 @@ open class BasePage {
     open val path: String = ""
 
     init {
-        PageFactory.initElements(ComponentFieldDecorator(driver), this)
+        PageFactory.initElements(ExtendedFieldDecorator(driver), this)
     }
 
     fun openPage() {

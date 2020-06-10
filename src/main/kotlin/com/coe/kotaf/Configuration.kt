@@ -8,4 +8,4 @@ val configurationFilePath: String = System.getProperty("config", "configuration.
 val configuration: JsonObject =
     Parser.default().parse(getResourcesPath(configurationFilePath)) as JsonObject
 
-val ELEMENT_TIMEOUT = configuration.long("elementTimeout") ?: 10
+val ELEMENT_TIMEOUT = configuration.long("elementTimeout") ?: 20
