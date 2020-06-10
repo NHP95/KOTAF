@@ -4,6 +4,7 @@ import com.coe.kotaf.base.BasePage
 import com.coe.kotaf.components.LoginForm
 import com.coe.kotaf.components.SearchForm
 import com.coe.kotaf.utils.waitUntil
+import io.kotlintest.matchers.string.shouldContain
 import io.kotlintest.shouldBe
 import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
@@ -49,6 +50,11 @@ class HomePage : BasePage() {
         searchIcon.click()
         searchForm.inputSearchString(searchString)
     }
+
+    fun shouldContainSearchString(searchString: String) =
+        searchForm.searchResults.forEach {
+            it.productTitle.toLowerCase() shouldContain searchString.toLowerCase()
+        }
 
     fun shouldDisplayMessage(message: String) {
         waitUntil(

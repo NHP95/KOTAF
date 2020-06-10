@@ -41,7 +41,7 @@ class ExtendedFieldDecorator(
             val locator: ElementLocator = factory.createLocator(field)
             when {
                 field.type canBeAssignedTo Component::class -> proxyForComponent(field.type, loader, locator)
-                field.type canBeAssignedTo List::class -> proxyForListLocator(field.type, loader, locator)
+                field.type canBeAssignedTo List::class -> proxyForListLocator(getListType(field), loader, locator)
                 else -> proxyForLocator(field.type, loader, locator)
             }
         } else null

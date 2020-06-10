@@ -8,10 +8,15 @@ import org.junit.jupiter.api.Test
 class SearchTest : BaseGUI() {
     @Test
     fun `Search results contain searching keyword`() {
+        val searchString = "Hoodie"
         steps<HomePage> {
             openPage()
-            search("Hoodie")
-            TODO("Add assertions")
+            search(searchString)
+            shouldContainSearchString(searchString)
         }
     }
 }
+
+
+
+

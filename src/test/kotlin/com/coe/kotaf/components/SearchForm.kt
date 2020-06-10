@@ -14,6 +14,9 @@ class SearchForm : AbstractComponent() {
     @FindBy(tagName = "button")
     lateinit var showAllResultsButton: Button
 
+    @FindBy(className = "search__products__item")
+    lateinit var searchResults: MutableList<SearchResult>
+
     fun inputSearchString(searchString: String) {
         searchInputField.waitForVisible()
         searchInputField.sendKeys(searchString)
