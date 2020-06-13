@@ -2,7 +2,7 @@ package com.coe.kotaf
 
 import com.beust.klaxon.JsonObject
 import com.beust.klaxon.Parser
-import com.coe.kotaf.utils.getResourcesPath
+import com.coe.kotaf.enum.getResourcesPath
 
 val configurationFilePath: String = System.getProperty("config", "configuration.json")
 val configuration: JsonObject =

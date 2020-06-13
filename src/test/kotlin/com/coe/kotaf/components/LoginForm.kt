@@ -3,7 +3,7 @@ package com.coe.kotaf.components
 import com.coe.kotaf.elements.AbstractComponent
 import com.coe.kotaf.elements.widgets.Button
 import com.coe.kotaf.elements.widgets.InputField
-import com.coe.kotaf.utils.waitForClickable
+import com.coe.kotaf.enum.waitForClickable
 import org.openqa.selenium.support.FindBy
 
 class LoginForm : AbstractComponent() {

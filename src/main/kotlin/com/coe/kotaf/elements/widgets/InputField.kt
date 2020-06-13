@@ -2,6 +2,7 @@ package com.coe.kotaf.elements.widgets
 
 import com.coe.kotaf.elements.AbstractElement
 import com.coe.kotaf.elements.Element
+import org.openqa.selenium.Keys
 import org.openqa.selenium.WebElement
 
 interface InputField : Element {
@@ -11,7 +12,7 @@ interface InputField : Element {
 }
 
 class InputFieldImpl(override var wrappedElement: WebElement) : AbstractElement(wrappedElement), InputField {
-    override fun clear() = this.wrappedElement.clear()
+    override fun clear() = this.wrappedElement.sendKeys(Keys.HOME, Keys.chord(Keys.SHIFT, Keys.END), Keys.SPACE)
 
     override fun sendKeys(vararg chars: CharSequence?) = chars.forEach {
         this.wrappedElement.sendKeys(it)

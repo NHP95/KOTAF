@@ -1,4 +1,4 @@
-package com.coe.kotaf.utils
+package com.coe.kotaf.enum
 
 import com.coe.kotaf.ELEMENT_TIMEOUT
 import com.coe.kotaf.driver.driver

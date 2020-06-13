@@ -1,6 +1,6 @@
 package com.coe.kotaf.driver
 
-import com.coe.kotaf.utils.getResourcesPath
+import com.coe.kotaf.enum.getResourcesPath
 import org.openqa.selenium.MutableCapabilities
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions

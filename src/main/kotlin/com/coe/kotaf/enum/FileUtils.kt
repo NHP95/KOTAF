@@ -1,4 +1,4 @@
-package com.coe.kotaf.utils
+package com.coe.kotaf.enum
 
 import java.io.File
 import java.net.URLDecoder
