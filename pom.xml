@@ -22,7 +22,7 @@
         <selenium.version>3.141.59</selenium.version>
         <appium.version>7.0.0</appium.version>
         <klaxon.version>5.0.11</klaxon.version>
-        <log4j.version>2.12.1</log4j.version>
+        <log4j.version>2.16.0</log4j.version>
         <slf4.version>1.7.28</slf4.version>
         <jetbrain.exposed.version>0.16.4</jetbrain.exposed.version>
         <reportportal.junit5.version>4.0.2</reportportal.junit5.version>
