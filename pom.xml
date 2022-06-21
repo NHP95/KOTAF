@@ -27,7 +27,7 @@
         <jetbrain.exposed.version>0.16.4</jetbrain.exposed.version>
         <reportportal.junit5.version>4.0.2</reportportal.junit5.version>
         <reportportal.junit5.logger.version>4.0.1</reportportal.junit5.logger.version>
-        <mysql.connector.version>8.0.17</mysql.connector.version>
+        <mysql.connector.version>8.0.28</mysql.connector.version>
         <junit5.video.version>2.0</junit5.video.version>
     </properties>
 
